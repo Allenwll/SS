@@ -1,0 +1,88 @@
+*{padding:0;margin:0;list-style:none;text-decoration:none}
+.floatR{float:right}
+.floatL{float:left}
+img{border:none}
+.clearb{clear:both;font-size:0;height:0;overflow:hidden;display:block}
+/*滚动条*/
+html,body { scrollbar-face-color:#b5bdc6;  scrollbar-highlight-color:#fff;  scrollbar-shadow-color:#eeeeee;  scrollbar-3dlight-color:#eeeeee;  scrollbar-arrow-color:#000;  scrollbar-track-color:#fff;  scrollbar-darkshadow-color:#fff;  }
+::-webkit-scrollbar-thumb {	background-color: #a9a9a9;/*滚动条颜色*/height: 50px;	outline-offset: -2px;	outline: 2px solid #353b45;-webkit-border-radius: 4px;	border: 2px solid #a9a9a9;/*滚动条边框颜色*/}
+::-webkit-scrollbar-thumb:hover {background-color: #929090;height: 50px;	-webkit-border-radius: 4px;}
+::-webkit-scrollbar {width: 8px;height: 8px;}
+::-webkit-scrollbar-track-piece {background-color:#f1f1f1;-webkit-border-radius: 0;}
+input:-webkit-autofill,input:-webkit-autofill:hover,input:-webkit-autofill:focus { box-shadow:0 0 0 60px #FFFFFF inset; }
+.section-btn,.section-btn img{height:25px;width:25px;display:block}
+.section-btn{margin-bottom:10px;cursor:pointer}
+.section-btn:hover{opacity:.8}
+.form-group{overflow:hidden;width:100%}
+.form-group li{line-height:36px;clear:both;margin-top:10px;color:#4b4b4b;font-size:14px}
+.form-group li .mini-textbox{width:72%}
+.form-group li .mini-buttonedit{width:72%}
+.form-group li .mini-radiobuttonlist,.form-group li .mini-checkboxlist{ top:10px;}
+
+.form-col-double li{width:45%;float:left;clear:none;padding-left:4%}
+.form-col-double li .control-label,.form-col-double li .mini-label,.form-group li .control-label,.form-group li .mini-label{text-align:left;width:120px;display:inline-block;float:left; padding-left:15px; font-weight: bold}
+.form-col-double li .mini-label{ width: 100%; float:none; padding: 0px; height: 20px; line-height: 20px;}
+.form-col-double li .mini-textbox,.form-col-double li .mini-buttonedit{ width: 100%}
+.perfTrend{cursor:pointer}
+
+/*操作模块*/
+.operation-box {border: none;overflow: hidden;padding: 10px 0px; }
+.operation-box .floatR a {  margin: 0 2px;  }
+.operation-box .search-textbox{ width: 400px; float: left; margin-right: 8px;}
+.header{background:#204153;height:60px;width:100%;overflow:hidden}
+.header h1,.header h1 img{margin:0;height:40px}
+.header h1{margin:10px 0 0 10px;float:left}
+.footer{height:30px;line-height:30px;color:#666666;font-size:14px;width:100%;z-index:999;text-align:center; background-color: #d4d4d4}
+@media screen and (max-width:1920px){.marq-box{width:52%}
+}
+@media screen and (max-width:1600px){.marq-box{width:42%}
+}
+@media screen and (max-width:1440px){.marq-box{width:38%}
+}
+@media screen and (max-width:1366px){.marq-box{width:34%}
+}
+@media screen and (max-width:1280px){.marq-box{width:30%}}
+
+/*日历*/
+.mini-calendar{ width: 280px!important;}
+body .mini-calendar td{ line-height: 20px; font-size: 14px; color: #9bb1c0}
+.mini-calendar-header{ border: none; background:none; color: #9bafc0}
+.mini-calendar-title{ line-height: 40px; font-size: 14px;}
+.mini-calendar-prev, .mini-calendar-next{ top:14px;}
+.mini-calendar .mini-calendar-today{ border:none; border-bottom: solid 2px #5997e0;}
+.mini-calendar .mini-calendar-selected{ border: none;}
+.mini-calendar .mini-calendar-othermonth{ color: #d9d9d9}
+.mini-calendar-daysheader td{ border: none; background-color: #f3f4f6}
+.mini-popup{ background:none}
+.mini-listbox-border{ border:solid 1px #d9d9d9!important;}
+/*分页*/
+.mini-pager-size .mini-buttonedit {height: 22px;  }
+.mini-pager-size .mini-buttonedit-icon {height: 20px;width: 20px;  }
+.mini-pager-size .mini-buttonedit-button, .mini-pager-size .mini-buttonedit-close {height: 20px;width: 20px;  }
+.mini-pager-size .mini-popupedit .mini-buttonedit-icon {background-position: 3px 5px;  }
+.mini-pager-size .mini-buttonedit-input { height: 20px;line-height: 20px;}
+.mini-pager-size .mini-buttonedit-border {height: 20px;  }
+.mini-pager-size .mini-popupedit {width: 65px !important;  }
+.mini-pager-left .mini-button:hover{ background:none!important;padding:1px;}
+
+/*表格*/
+.mini-grid-headerCell{background: #3a9ee0;border-right: #3a9ee0 1px solid; border-bottom: #3a9ee0 1px solid; color: #fff}
+.mini-grid-cell-inner a {  margin: 0 4px;  cursor: pointer  }
+.mini-grid-viewport{ background-color: #ebebeb}
+.mini-grid-row-alt{ background-color: #c5cedc}
+.mini-grid-cell, .mini-grid-headerCell, .mini-grid-filterCell, .mini-grid-summaryCell{border-right: #fff 1px solid; border-bottom: #fff 1px solid;}
+html body .mini-grid-row-selected,html body .mini-grid-row-hover{ background-color: #abbfde}
+.mini-grid-table .authority-button{ border:none; padding:0 5px; line-height: 20px; font-size: 12px;}
+/*选项卡*/
+.subjectType {margin-right: 10px; cursor: pointer;  font-size: 14px;  height: 25px;  line-height: 25px;  display: inline-block;  padding: 0 10px;  }
+.selectedType { color: #ffffff;  background: #458bba;  }
+
+/*弹出框*/
+.mini-window .mini-panel-header{ background: #fff; border-radius: 5px 5px 0 0px; height: 45px; border-bottom:solid 1px #d8d8d8}
+.mini-window .mini-panel-header-inner{ height: 45px; line-height: 45px;}
+.mini-window .mini-panel-border{ border: none}
+.mini-window .auxiliary-toolbar{ margin: 0px;}
+.mini-panel .mini-panel-title{ line-height: 45px;}
+.mini-panel-viewport{border-radius: 0px 0px 5px 5px;}
+.mini-panel-toolbar{ text-align: center; padding:5px 0px; background: none}
+.mini-panel-toolbar a{ margin:0 6px}

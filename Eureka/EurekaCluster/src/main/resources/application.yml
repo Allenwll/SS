@@ -1,0 +1,39 @@
+---
+spring:
+  application:
+    name: spring-cloud-eureka
+  profiles: alan
+server:
+  port: 8000
+eureka:
+  instance:
+    hostname: alan
+  client:
+    serviceUrl:
+      defaultZone: http://allen:8001/eureka/,http://yxl:8002/eureka/
+---
+spring:
+  application:
+    name: spring-cloud-eureka
+  profiles: allen
+server:
+  port: 8001
+eureka:
+  instance:
+    hostname: allen
+  client:
+    serviceUrl:
+      defaultZone: http://alan:8000/eureka/,http://yxl:8002/eureka/
+---
+spring:
+  application:
+    name: spring-cloud-eureka
+  profiles: yxl
+server:
+  port: 8002
+eureka:
+  instance:
+    hostname: yxl
+  client:
+    serviceUrl:
+      defaultZone: http://alan:8000/eureka/,http://allen:8001/eureka/

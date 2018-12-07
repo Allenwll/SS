@@ -1,0 +1,20 @@
+server:
+  servlet:
+    context-path: /student
+  port: 80
+  uri-encoding: utf-8
+spring:
+  mvc:
+    view:
+      prefix: /WEB-INF/jsp/
+      suffix: .jsp
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/student?useUnicode=true&amp;characterEncoding=utf8&amp;zeroDateTimeBehavior=convertToNull&amp;transformedBitIsBoolean=true
+    username: root
+    password: root
+    driver-class-name: com.mysql.jdbc.Driver
+  jpa:
+    hibernate:
+     ddl-auto: update #新增数据库连接必备参数
+     dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+    show-sql: true
